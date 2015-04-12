@@ -1,6 +1,6 @@
 {
   "name": "node-chrome-cordova-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Templating tool for building Chrome apps with NPM integration",
   "main": "main.js",
   "scripts": {
@@ -33,5 +33,11 @@
   },
   "engines": {
     "node": ">= 0.10.x"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-jsbeautifier": "^0.2.10",
+    "grunt-release": "^0.12.0"
   }
 }
