@@ -32,8 +32,7 @@ After completing each of these steps, cca may prompt you to fix/install somethin
 	* This will run ```cca create MyApp && cd MyApp && npm init```
 2. The ```npm init``` will prompt you for changes to the package.json.
 
-```
-name: (MyApp)
+```name: (MyApp)
 version: (1.0.0)
 description:
 entry point: (index.js)
@@ -54,8 +53,7 @@ About to write to [path]/MyApp/package.json:
 	"author": "",
 	"license": "ISC"
 }		
-Is this ok? (yes)
-```
+Is this ok? (yes)```
 
 3. After accepting your package.json configuration, ncca will update the file directories and package.json to include gruntfile dependencies.
 4. At this point you will be prompted with ```Install Packages and Build? (y/n)```. If you choose 'no', then ncca will quit. If you choose yes, then ncca will run ```npm install && grunt tasks && cca prepare && cca build```
@@ -84,8 +82,7 @@ The diagram below illustrates the overall process of generating multi-platform a
 
 The diagram below illustrates the ncca file structure.
 
-```
--/ROOT
+```-/ROOT
 |----/background			[Place all files relating to the background process for the chrome app here.]
 |    |----background.js		[Serves as a starting point for background execution and file dependency loading.]
 |
@@ -109,8 +106,7 @@ The diagram below illustrates the ncca file structure.
 |----config.xml				[Created and updated by cca prepare (do not edit directly, edit www/manifest.json)]
 |----Gruntfile.js			[Created by ncca to prepare files, edit accoridngly]
 |----package.json			[Created by npm to describe the 'package'. Relatively unused except for dependency tracking]
-|----README.md				[Created by ncca, but should be updated to match your app.]
-```
+|----README.md				[Created by ncca, but should be updated to match your app.]```
 
 After the initial ```ncca MyApp``` runs, and you either automatically or manually run ```npm install && grunt tasks && cca prepare && cca build```, you should run ```grunt``` in the project root. This will start a watcher that watches for file changes and automatically rebuilds the project upon changes. At any point, use ctrl-c to stop the watcher. Then run ```cca prepare && cca build``` to create the mobile-friendly builds. 
 
