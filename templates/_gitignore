@@ -1,0 +1,7 @@
+
+# Node.js packages
+/node_modules/
+npm-debug.log
+
+# Documentation
+/docs/

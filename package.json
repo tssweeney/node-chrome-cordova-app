@@ -1,0 +1,29 @@
+{
+  "name": "node-chrome-cordova-app",
+  "version": "1.0.0",
+  "description": "Templating tool for building Chrome apps with NPM integration",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "node",
+    "chrome",
+    "cordova",
+    "app"
+  ],
+  "author": "Timothy Scott Sweeney Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^0.2.14",
+    "cca": ""
+  },
+  "preferGlobal": true,
+  "bin": {
+    "ncca": "main.js"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  }
+}
