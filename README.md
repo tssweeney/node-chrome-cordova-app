@@ -80,7 +80,7 @@ Be sure to read the template code to understand the app lifecycle. You can chang
 
 The diagram below illustrates the overall process of generating multi-platform applications using ncca.
 
-![image](README_assets/process_overview.png =600x)
+![image](https://github.com/tssweeney/node-chrome-cordova-app/blob/master/README_assets/process_overview.png =600x)
 
 The diagram below illustrates the ncca file structure.
 
@@ -116,4 +116,4 @@ After the initial ```ncca MyApp``` runs, and you either automatically or manuall
 
 Below is a process flow of the Gruntfile.js process:
 
-![image](README_assets/grunt_process.png =600x)
+![image](https://github.com/tssweeney/node-chrome-cordova-app/blob/master/README_assets/grunt_process.png =600x)
