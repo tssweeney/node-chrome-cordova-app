@@ -32,7 +32,7 @@ After completing each of these steps, cca may prompt you to fix/install somethin
 	* This will run ```cca create MyApp && cd MyApp && npm init```
 2. The ```npm init``` will prompt you for changes to the package.json.
 
-	```
+```
 name: (MyApp)
 version: (1.0.0)
 description:
