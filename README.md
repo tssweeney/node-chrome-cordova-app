@@ -71,7 +71,7 @@ Is this ok? (yes)
  	* ```cca prepare``` prepares the chrome-cordova-app for multi-device builds.
  		* NOTE: If this fails, run ```cca checking``` in the project root to ensure that your system is capable of building multi-device apps. Fix any issues here before manually running ```cca prepare && cca build``` again.
  	* ```cca build``` builds the application for iOS or Android depending on your current system setup.
-5. Now that the project has been created and built. Open [Chrome Apps & Extensions Developer Tool] (https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc?hl=en) and install your app via the www folder. Click launch to see how your app will run on a desktop OS. 
+5. Now that the project has been created and built. Open [Chrome Apps & Extensions Developer Tool](https://chrome.google.com/webstore/detail/chrome-apps-extensions-de/ohmmkhmmmpcnpikjeljgnaoabkaalbgc?hl=en) and install your app via the www folder. Click launch to see how your app will run on a desktop OS. 
 6. You can also run ```cca run [ios/android] [--device]``` to test mobile functionality.
 
 Be sure to read the template code to understand the app lifecycle. You can change the default window size via the background.js file. 
