@@ -113,7 +113,7 @@ var updateClient = function(name) {
 };
 
 var promptForBuild = function(name) {
-  prompt.start();
+  // prompt.start();
   prompt.message = "ncca";
   prompt.get("Install Packages and Build? (y/n)", function(err, results) {
     if (err) {
