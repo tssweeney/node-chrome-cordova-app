@@ -2,7 +2,7 @@
 var tasks = ["jsbeautifier", "jshint", "browserify", "uglify", "docco"];
 
 // establish a file-list,
-var files = ["background/*", "client/*", "www/*", "Gruntfile.js", "package.json", "!www/bin/*", "!www/assets/*"];
+var files = ["background/**/*", "client/**/*", "www/**/*", "Gruntfile.js", "package.json", "!www/bin/*", "!www/assets/*"];
 
 // and setup the Grunfile.
 module.exports = function(grunt) {
