@@ -94,6 +94,7 @@ var updateIndexHTML = function(name) {
 
 var updateWWWFolder = function(name) {
   fs.mkdirSync("./" + name + "/www/bin");
+  fs.mkdirSync("./" + name + "/www/lib");
   fs.writeFileSync("./" + name + "/www/bin/background.js", "");
   fs.writeFileSync("./" + name + "/www/bin/client.js", "");
 
