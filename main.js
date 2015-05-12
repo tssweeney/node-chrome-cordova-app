@@ -6,16 +6,24 @@ var fs = require("fs");
 var prompt = require("prompt");
 
 var createChromeCordovaApp = function(name) {
-  var cca = exec("cca create " + name,
+  var test = exec("cca",
     function(error, stdout, stderr) {
-      if (stdout)
-        console.log(stdout);
-      if (stderr)
-        console.log(stderr);
       if (error !== null) {
-        console.log(":: 'cca create 'failed");
+        console.log("Please run `sudo npm install -g cca` before continuing.");
       } else {
-        NPMinit(name);
+        var cca = exec("cca create " + name,
+          function(error, stdout, stderr) {
+            if (stdout)
+              console.log(stdout);
+            if (stderr)
+              console.log(stderr);
+            if (error !== null) {
+              console.log(":: 'cca create 'failed");
+            } else {
+              NPMinit(name);
+            }
+          }
+        );
       }
     }
   );
