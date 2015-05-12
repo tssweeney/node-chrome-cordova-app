@@ -69,7 +69,7 @@ var updateREADME = function(name) {
 var updatePackageJSON = function(name) {
   var currentPackage = JSON.parse(fs.readFileSync("./" + name + "/package.json"));
   currentPackage.devDependencies = {
-    "grunt": "", // "^0.4.5",
+    "grunt-cli": "", // "^0.4.5",
     "grunt-browserify": "", // "^3.3.0",
     "grunt-contrib-jshint": "", // "^0.11.0",
     "grunt-contrib-uglify": "", // "^0.8.0",
