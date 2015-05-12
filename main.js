@@ -147,7 +147,7 @@ var build = function(name) {
       stdio: 'inherit',
       cwd: "./" + name
     }, ":: 'npm install' failed."],
-    ["grunt", ["tasks"], {
+    ["./node_modules/grunt-cli/bin/grunt", ["tasks"], {
       stdio: 'inherit',
       cwd: "./" + name
     }, ":: 'Grunt tasks' failed."],
