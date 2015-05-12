@@ -9,7 +9,7 @@ var testCCA = function(name) {
   var test = exec("cca",
     function(error, stdout, stderr) {
       if (error !== null) {
-        console.log("Please run `sudo npm install -g cca` before continuing.\nRun `cca create [ANY_NAME_YOU_WANT]`.\n Finally remove the folder with `rm -rf [ANY_NAME_YOU_WANT]`.\n This is to install and setup cca.");
+        console.log("\tPlease run `sudo npm install -g cca` before continuing.\n\tRun `cca create [ANY_NAME_YOU_WANT]`.\n\tFinally remove the folder with `rm -rf [ANY_NAME_YOU_WANT]`.\n\tThis is to install and setup cca.");
       } else {
         createChromeCordovaApp(name);
       }
