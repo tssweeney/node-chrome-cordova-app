@@ -5,25 +5,29 @@ var spawn = require("child_process").spawn;
 var fs = require("fs");
 var prompt = require("prompt");
 
-var createChromeCordovaApp = function(name) {
+var testCCA = function(name) {
   var test = exec("cca",
     function(error, stdout, stderr) {
       if (error !== null) {
         console.log("Please run `sudo npm install -g cca` before continuing.");
       } else {
-        var cca = exec("cca create " + name,
-          function(error, stdout, stderr) {
-            if (stdout)
-              console.log(stdout);
-            if (stderr)
-              console.log(stderr);
-            if (error !== null) {
-              console.log(":: 'cca create 'failed");
-            } else {
-              NPMinit(name);
-            }
-          }
-        );
+        createChromeCordovaApp(name);
+      }
+    }
+  );
+};
+
+var createChromeCordovaApp = function(name) {
+  var cca = exec("cca create " + name,
+    function(error, stdout, stderr) {
+      if (stdout)
+        console.log(stdout);
+      if (stderr)
+        console.log(stderr);
+      if (error !== null) {
+        console.log(":: 'cca create 'failed");
+      } else {
+        NPMinit(name);
       }
     }
   );
@@ -181,7 +185,7 @@ var spawnInOrder = function(spawns, cb) {
 };
 
 if (process.argv[2] && process.argv[2].indexOf(" ") == -1) {
-  createChromeCordovaApp(process.argv[2]);
+  testCCA(process.argv[2]);
 } else {
   console.log(":: Usage (appName cannot contain spaces): ncca [appName]");
 }
