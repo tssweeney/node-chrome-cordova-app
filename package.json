@@ -1,6 +1,6 @@
 {
   "name": "node-chrome-cordova-app",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Templating tool for building Chrome apps with NPM integration",
   "main": "main.js",
   "scripts": {
